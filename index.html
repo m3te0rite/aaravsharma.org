@@ -2,28 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Full Screen App</title>
+  <title>Fullscreen Iframe</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      overflow: hidden; /* no scrollbars */
+      overflow: hidden; /* no scrollbars on the page */
     }
     iframe {
-      border: none;          /* borderless */
+      border: none;
       width: 100vw;
       height: 100vh;
       display: block;
+      overflow: auto; /* iframe can scroll */
     }
   </style>
 </head>
 <body>
   <iframe
     src="https://imaarav.base44.app"
-    frameborder="0"
-    scrolling="no"
   ></iframe>
 </body>
 </html>
